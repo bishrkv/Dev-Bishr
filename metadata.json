@@ -1,0 +1,6 @@
+{
+  "name": "Bishr KV Portfolio",
+  "description": "Interactive modern dark portfolio for Bishr KV, Full Stack Web Developer, with live projects, testimonials, contact form, and JSON-backed admin manager.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,77 @@
+{
+  "$schema": "https://raw.githubusercontent.com/firebase/firebase-tools/master/schema/firestore-blueprint.json",
+  "collections": [
+    {
+      "name": "portfolio_config",
+      "description": "Stores editable portfolio website data including bio, projects, skills, services, timeline, and testimonials.",
+      "fields": [
+        {
+          "name": "about",
+          "type": "array",
+          "description": "List of about bio paragraphs"
+        },
+        {
+          "name": "skills",
+          "type": "array",
+          "description": "List of skill category objects"
+        },
+        {
+          "name": "services",
+          "type": "array",
+          "description": "List of service objects"
+        },
+        {
+          "name": "timeline",
+          "type": "array",
+          "description": "List of education and experience timeline items"
+        },
+        {
+          "name": "projects",
+          "type": "array",
+          "description": "List of portfolio projects"
+        },
+        {
+          "name": "testimonials",
+          "type": "array",
+          "description": "List of client testimonials and reviews"
+        },
+        {
+          "name": "updatedAt",
+          "type": "string",
+          "description": "ISO timestamp of last update"
+        }
+      ]
+    },
+    {
+      "name": "contact_messages",
+      "description": "Stores contact form submissions received from website visitors.",
+      "fields": [
+        {
+          "name": "name",
+          "type": "string",
+          "description": "Visitor full name"
+        },
+        {
+          "name": "email",
+          "type": "string",
+          "description": "Visitor email address"
+        },
+        {
+          "name": "subject",
+          "type": "string",
+          "description": "Subject of the message"
+        },
+        {
+          "name": "message",
+          "type": "string",
+          "description": "Message content"
+        },
+        {
+          "name": "date",
+          "type": "string",
+          "description": "Date string"
+        }
+      ]
+    }
+  ]
+}
